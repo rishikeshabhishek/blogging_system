@@ -1,0 +1,78 @@
+<%- include("partial/header") %>
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <%- include("partial/sidebar") %>
+
+
+            <!-- Content Wrapper -->
+            <div id="content-wrapper" class="d-flex flex-column">
+
+                <!-- Main Content -->
+                <div id="content">
+
+                    <%- include("partial/top-nav") %>
+
+                        <!-- Begin Page Content -->
+                        <div class="container-fluid">
+
+                            <!-- Page Heading -->
+                            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                                <h1 class="h3 mb-0 text-gray-800">Add Banner</h1>
+                            </div>
+
+                            <form action="banner" method="post">
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Enter Heading</label><br>
+                                    <input type="text" class="form-control" name="heading" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Heading" style="font-size: 1.2rem;">
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Enter Details</label><br>
+                                    <textarea name="text"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Add-Details</button>
+                            </form>
+                            <hr>
+                            <!-- <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">Handle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td colspan="2">Larry the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table> -->
+                        </div>
+                        <!-- End Begin Page Content -->
+                </div>
+                <!-- End of Main Content -->
+
+                <%- include("partial/footer") %>
+                    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+                    <script>
+                        CKEDITOR.replace('text');
+                    </script>

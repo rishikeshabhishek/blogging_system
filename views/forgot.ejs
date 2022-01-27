@@ -1,0 +1,25 @@
+<%- include("partial/header.ejs") %>
+    <%- include("partial/header-top.ejs") %>
+
+        <!-- login-page -->
+        <div class="login">
+            <div class="login-grids">
+                <div class="col-md-12 log">
+                    <h3>Forgot Password</h3>
+                            <p>Please Enter The Email To Forgot Your Password.</p>
+                            <% if(message.length > 0) {%>
+                                <div class="<%- alert %>">
+                                    <%- message %>
+                                </div>
+                                <% } %>
+                            <form action="getlink" method="post">
+                                <h5>Email:</h5>
+                                <input type="text" name="email"> <br>
+                                <input type="submit" value="Get Link">
+                            </form>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- //login-page -->
+        <%- include("partial/footer.ejs") %>
